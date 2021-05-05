@@ -1,7 +1,7 @@
 # Build-to-Manage:  Health check API
 
 
-The [Getting Started](#getting-started) section provides general guildlines on recommended practices for health check for microservices. We are also building code samples to help application squads enable health check API endpoints in their chosen technology stack. The [Code Samples](#code-samples) section contains the current snapshot of the work in progress.
+The [Getting Started](#getting-started) section provides general guildlines on recommended practices for health check for microservices. The [Activities and Responsibilities of Application Teams](#activities-and-responsibilities-of-application-teams) section describes general activities and responsibilities of application team.  It provides guidance to application team to implement Health Check API. We are also building code samples to help application squads enable health check API endpoints in their chosen technology stack. The [Code Samples](#code-samples) section contains the current snapshot of the work in progress.
 
 ## Getting Started
 
