@@ -155,6 +155,37 @@ Popular frameworks (not intended as an exhaust list)
   * Basic Python examples [https://github.com/ibm-cloud-architecture/build-tomanage/blob/master/HealthCheckAPIs/python](https://github.com/ibm-cloud-architecture/build-tomanage/blob/master/HealthCheckAPIs/python)
   * Runscope Python HealthCheck example [https://github.com/Runscope/healthcheck](https://github.com/Runscope/healthcheck)
 
+## Activities and Responsibilities of Application Teams
+
+To improve availability and reliability, application should adopt **Health Check API** practice during software development life cycle.  The section describes general activities and responsibilities application team in related to Health Check API.
+
+* Add **Health Check API** related stories into backlog.
+* Include **Health Check API** section in application design document. The follow illustrates a sample *Health Check API** section in application design document.
+
+> ## Health Check API
+> All services of this application will implement the following health check API endpoints to validate the status of designated services and all its dependencies. 
+>   
+> - Liveness endpoint: checks if the application instance (pod in Kubernetes terminology) is still running.    
+> - Readiness endpoint: determines if an application instance is ready to service requests. If any dependency (e.g. DynamoDB, MQ, etc.) or internal component is not in ready state, the readiness endpoint will return error state with corresponding return code.   
+>  
+> These health check API endpoints are private and should not expose to public.   
+> Liveness and readiness endpoints will integrate with OpenShift (Kubernetes) liveness and readiness probe to improve availability and reliability.   
+> During testing stage of CI/CD pipeline, a pipeline step will verify health check API endpoints. 
+>
+>  
+> Service Health Check API endpoint pattern: 
+> - Liveness endpoint: http://HOSTNAME:PORT/health/live
+> - Readiness endpoint: http://HOSTNAME:PORT/health/ready
+> 
+> *HOSTNAME* and *PORT* are determined by running environment. In local developer machine, *HOSTNAME* usually is localhost and the *PORT* must be unique locally to avoid conflict among services. In OpenShift, *HOSTNAME* usually follow <SERVICE_NAME>-<PROJECT_NAME>.<APPLICATION_DOMAIN> pattern, e.g. *service1-MyProject.apps.rosa.aws.com* in which <SERVICE_NAME>=service1, <PROJECT_NAME>=MyProject, and <APPLICATION_DOMAIN>=apps.rosa.aws.com 
+   
+* Implement **Health Check API** as described in **Health Check API** section of application design document to provide Health Check API endpoints. Every service provided by the application should provide **Health Check API** endpoints. For example, if application has 3 services, all 3 services should provide **Health Check API** endpoints.
+* Test **Health Check API** endpoints appropriately in various runtimes, including local developer machine and OpenShift, or other target runtime and platform environments.
+* Include **Health Check API** endpoints testing in CI/CD pipeline as part of quality verification.
+* Integrate **Health Check API** endpoints with liveness and readiness probe of target platform, e.g. OpenShift (ROSA).
+* Monitor **Health Check API** endpoints with designated monitoring tool and define alerts and event rules.
+* Document **Health Check API** information for reference.
+
 
 ## Code Samples
 
