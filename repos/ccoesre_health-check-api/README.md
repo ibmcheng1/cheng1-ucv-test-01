@@ -1,7 +1,7 @@
 # Build-to-Manage:  Health check API
 
 
-The [Getting Started](#getting-started) section provides general guildlines on recommended practices for health check for microservices. The [Activities and Responsibilities of Application Teams](#activities-and-responsibilities-of-application-teams) section describes general activities and responsibilities of application team.  It provides guidance to application team to implement Health Check API. We are also building code samples to help application squads enable health check API endpoints in their chosen technology stack. The [Code Samples](#code-samples) section contains the current snapshot of the work in progress.
+The [Getting Started](#getting-started) section provides general guildlines on recommended practices for health check for microservices. The [Activities and Responsibilities of Application Teams](#activities-and-responsibilities-of-application-teams) section describes general activities and responsibilities of application teams.  It provides guidance to application team to implement Health Check API. We are also building code samples to help application squads enable health check API endpoints in their chosen technology stack. The [Code Samples](#code-samples) section contains the current snapshot of the work in progress.
 
 ## Getting Started
 
@@ -155,12 +155,13 @@ Popular frameworks (not intended as an exhaust list)
   * Basic Python examples [https://github.com/ibm-cloud-architecture/build-tomanage/blob/master/HealthCheckAPIs/python](https://github.com/ibm-cloud-architecture/build-tomanage/blob/master/HealthCheckAPIs/python)
   * Runscope Python HealthCheck example [https://github.com/Runscope/healthcheck](https://github.com/Runscope/healthcheck)
 
+
 ## Activities and Responsibilities of Application Teams
 
-To improve availability and reliability, application should adopt **Health Check API** practice during software development life cycle.  The section describes general activities and responsibilities application team in related to Health Check API.
+To improve availability and reliability, application should adopt **Health Check API** practice during software development life cycle.  The section describes general activities and responsibilities of application teams in related to Health Check API.
 
 * Add **Health Check API** related stories into backlog.
-* Include **Health Check API** section in application design document. The follow illustrates a sample *Health Check API** section in application design document.
+* Include **Health Check API** section in application design document. The following illustrates a sample *Health Check API** section in application design document.
 
 > ## Health Check API
 > All services of this application will implement the following health check API endpoints to validate the status of designated services and all its dependencies. 
