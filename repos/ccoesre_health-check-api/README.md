@@ -161,7 +161,7 @@ Popular frameworks (not intended as an exhaust list)
 To improve availability and reliability, application should adopt **Health Check API** practice during software development life cycle.  The section describes general activities and responsibilities of application teams in related to Health Check API.
 
 * Add **Health Check API** related stories into backlog.
-* Include **Health Check API** section in application design document. The following illustrates a sample *Health Check API** section in application design document.
+* Include **Health Check API** section in application design document. The following illustrates a sample **Health Check API** section in application design document.
 
 > ## Health Check API
 > All services of this application will implement the following health check API endpoints to validate the status of designated services and all its dependencies. 
