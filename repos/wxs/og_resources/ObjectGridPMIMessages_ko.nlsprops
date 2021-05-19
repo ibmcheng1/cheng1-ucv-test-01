@@ -1,0 +1,156 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrid
+mapModule=ObjectGrid \ub9f5
+mapModule.desc=ObjectGrid \ub9f5 \ud1b5\uacc4
+objectGridModule.desc=ObjectGrid \ud1b5\uacc4
+queryModule=ObjectGrid \uc870\ud68c
+queryModule.desc=ObjectGrid \uc870\ud68c \ud1b5\uacc4
+hashIndexModule=HashIndex \ud50c\ub7ec\uadf8\uc778
+hashIndexModule.desc=HashIndex \ud1b5\uacc4
+agentModule=\uc5d0\uc774\uc804\ud2b8 \uad00\ub9ac\uc790
+agentModule.desc=\uc5d0\uc774\uc804\ud2b8 \uad00\ub9ac\uc790 \ud1b5\uacc4
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=\ub9f5 \uc801\uc911\ub960
+mapModule.hitRate.desc=\uc774 \ub9f5\uc758 \uc801\uc911\ub960\uc785\ub2c8\ub2e4.
+
+mapModule.hitCount.name=\ub9f5 \ud788\ud2b8 \uc218
+mapModule.hitCount.desc=\uce90\uc2dc \ud788\ud2b8\ub41c \uc774 \ub9f5\uc5d0 \ub300\ud55c \uac00\uc838\uc624\uae30 \uc870\uc791\uc758 \ucd1d \uc218\uc785\ub2c8\ub2e4. 
+
+mapModule.getCount.name=\ub9f5 \ud655\ubcf4 \uc218
+mapModule.getCount.desc=\uc774 \ub9f5\uc5d0 \ub300\ud55c \uac00\uc838\uc624\uae30 \uc870\uc791\uc758 \ucd1d \uc218\uc785\ub2c8\ub2e4. 
+
+mapModule.numEntries.name=\ub9f5 \ud56d\ubaa9 \uc218
+mapModule.numEntries.desc=\uc774 \ub9f5\uc758 \ud56d\ubaa9 \uc218\uc785\ub2c8\ub2e4.
+
+mapModule.loaderBatchUpdateTime.name=\ub85c\ub354\uc758 \uc77c\uad04\ucc98\ub9ac \uc5c5\ub370\uc774\ud2b8 \uc2dc\uac04\uc785\ub2c8\ub2e4.
+mapModule.loaderBatchUpdateTime.desc=\ub85c\ub354\uc758 \uc77c\uad04\ucc98\ub9ac \uc5c5\ub370\uc774\ud2b8 \uc870\uc791 \uc751\ub2f5 \uc2dc\uac04\uc785\ub2c8\ub2e4.
+
+mapModule.usedBytes.name=\uc774 \ub9f5\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \ubc14\uc774\ud2b8 \uc218
+mapModule.usedBytes.desc=\uc774 \ub9f5\uc5d0 \uc800\uc7a5\ub41c \ud0a4\uc640 \uac12\uc5d0 \uc18c\ubaa8\ub418\ub294 \ud799 \uba54\ubaa8\ub9ac\uc758 \ubc14\uc774\ud2b8 \uc218\uc785\ub2c8\ub2e4. \uc0ac\uc6a9\ub41c \ubc14\uc774\ud2b8 \ud1b5\uacc4\ub294 \ub2e8\uc21c \uc624\ube0c\uc81d\ud2b8 \ub610\ub294 COPY_TO_BYTES \ubcf5\uc0ac \ubaa8\ub4dc\ub97c \uc0ac\uc6a9 \uc911\uc778 \uacbd\uc6b0\uc5d0\ub9cc \uc815\ud655\ud569\ub2c8\ub2e4.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=\ud2b8\ub79c\uc7ad\uc158 \uc751\ub2f5 \uc2dc\uac04
+objectGridModule.transactionResponseTime.desc=\ud2b8\ub79c\uc7ad\uc158\uc758 \uc751\ub2f5 \uc2dc\uac04 \ud1b5\uacc4\uc785\ub2c8\ub2e4.
+
+unit.none=\uc5c6\uc74c
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=\uc870\ud68c \uc2e4\ud589 \uc2dc\uac04
+queryModule.queryExecutionTime.desc=\uc870\ud68c\ub97c \uc2e4\ud589\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+queryModule.planCreationTime.name=\uc870\ud68c \uacc4\ud68d \uc791\uc131 \uc2dc\uac04
+queryModule.planCreationTime.desc=\uc870\ud68c \uacc4\ud68d \uc791\uc131\uc5d0 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+queryModule.queryExecutionCount.name=\uc870\ud68c \uc2e4\ud589 \uc218
+queryModule.queryExecutionCount.desc=\uc870\ud68c\ub97c \uc2e4\ud589\ud558\ub294 \ud69f\uc218
+
+queryModule.queryResultCount.name=\uc870\ud68c \uacb0\uacfc \uc218
+queryModule.queryResultCount.desc=\uc870\ud68c\uac00 \uc2e4\ud589\ub418\uace0 \uacb0\uacfc\ub97c \uc0b0\ucd9c\ud558\ub294 \ud69f\uc218
+
+queryModule.queryFailureCount.name=\uc870\ud68c \uc2e4\ud328 \uc218
+queryModule.queryFailureCount.desc=\uc870\ud68c\uac00 \uc2e4\ud328\ud558\ub294 \ud69f\uc218
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc218
+hashIndexModule.findCount.desc=\uc0c9\uc778 \ucc3e\uae30 \ud638\ucd9c \uc218
+
+hashIndexModule.findDurationTime.name=\uc0c9\uc778 \ucc3e\uae30 \uc9c0\uc18d \uae30\uac04
+hashIndexModule.findDurationTime.desc=\ucc3e\uae30 \uc870\uc791\uc744 \uc644\ub8cc\ud558\ub294 \ub370 \uac78\ub9ac\ub294 \uc2dc\uac04
+
+hashIndexModule.findResultCount.name=\uc0c9\uc778 \ucc3e\uae30 \uacb0\uacfc \uc218
+hashIndexModule.findResultCount.desc=\ucc3e\uae30 \uc870\uc791\uc73c\ub85c \ub9ac\ud134\ub41c \ud0a4\uc758 \uc218
+
+hashIndexModule.findFailureCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc2e4\ud328 \uc218
+hashIndexModule.findFailureCount.desc=\ucc3e\uae30 \uc870\uc791\uc758 \uc2e4\ud328 \uc218
+
+hashIndexModule.findCollisionCount.name=\uc0c9\uc778 \ucc3e\uae30 \ucda9\ub3cc \uc218
+hashIndexModule.findCollisionCount.desc=\ucc3e\uae30 \uc870\uc791\uc758 \ucda9\ub3cc \uc218
+
+hashIndexModule.batchUpdateCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc77c\uad04\ucc98\ub9ac \uc5c5\ub370\uc774\ud2b8 \uc218
+hashIndexModule.batchUpdateCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc77c\uad04\ucc98\ub9ac \uc5c5\ub370\uc774\ud2b8 \uc218
+
+hashIndexModule.updateCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc5c5\ub370\uc774\ud2b8 \uc218
+hashIndexModule.updateCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc5c5\ub370\uc774\ud2b8 \uc870\uc791 \uc218
+
+hashIndexModule.insertCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc0bd\uc785 \uc218
+hashIndexModule.insertCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc0bd\uc785 \uc870\uc791 \uc218
+
+hashIndexModule.deleteCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc0ad\uc81c \uc218
+hashIndexModule.deleteCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc0ad\uc81c \uc870\uc791 \uc218
+
+hashIndexModule.evictionCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc81c\uac70 \uc218
+hashIndexModule.evictionCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc81c\uac70 \uc870\uc791 \uc218
+
+hashIndexModule.clearCount.name=\uc0c9\uc778 \ucc3e\uae30 \uc9c0\uc6b0\uae30 \uc218
+hashIndexModule.clearCount.desc=\uc774 \uc0c9\uc778\uc5d0 \ub300\ud55c \uc9c0\uc6b0\uae30 \uc870\uc791 \uc218
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=\uc5d0\uc774\uc804\ud2b8 \uac10\uc18c \uc2dc\uac04
+agentModule.reduceTime.desc=\uc5d0\uc774\uc804\ud2b8\uac00 \uac10\uc18c \uc870\uc791\uc744 \uc644\ub8cc\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \ucd1d \uc2dc\uac04
+
+agentModule.totalDurationTime.name=\uc5d0\uc774\uc804\ud2b8 \ucd1d \uc9c0\uc18d \uc2dc\uac04
+agentModule.totalDurationTime.desc=\uc5d0\uc774\uc804\ud2b8\uac00 \uc644\ub8cc\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \ucd1d \uc2dc\uac04
+
+agentModule.partitionCount.name=\uc5d0\uc774\uc804\ud2b8 \ud30c\ud2f0\uc158 \uc218
+agentModule.partitionCount.desc=\uc5d0\uc774\uc804\ud2b8\uac00 \uc804\uc1a1\ub418\ub294 \ud30c\ud2f0\uc158\uc758 \uc218
+
+agentModule.agentSerializationTime.name=\uc5d0\uc774\uc804\ud2b8 \uc9c1\ub82c\ud654 \uc2dc\uac04
+agentModule.agentSerializationTime.desc=\uc5d0\uc774\uc804\ud2b8\ub97c \uc9c1\ub82c\ud654\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+agentModule.resultInflationTime.name=\uc5d0\uc774\uc804\ud2b8 \uacb0\uacfc \ud655\uc7a5 \uc2dc\uac04
+agentModule.resultInflationTime.desc=\uc5d0\uc774\uc804\ud2b8\uc758 \uacb0\uacfc\ub97c \ud655\uc7a5\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+agentModule.invocationCount.name=\uc5d0\uc774\uc804\ud2b8 \uad00\ub9ac\uc790 \ud638\ucd9c \uc218
+agentModule.invocationCount.desc=AgentManager\uac00 \uc2dc\uc791\ub41c \ud69f\uc218
+
+agentModule.failureCount.name=\uc5d0\uc774\uc804\ud2b8 \uc2e4\ud328 \uc218
+agentModule.failureCount.desc=\uc5d0\uc774\uc804\ud2b8\uac00 \uc2e4\ud328\ud55c \ud69f\uc218
+
+agentModule.agentInflationTime.name=\uc5d0\uc774\uc804\ud2b8 \ud655\uc7a5 \uc2dc\uac04
+agentModule.agentInflationTime.desc=\uc11c\ubc84\uc5d0\uc11c \uc5d0\uc774\uc804\ud2b8\ub97c \ud655\uc7a5\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+agentModule.resultSerializationTime.name=\uc5d0\uc774\uc804\ud2b8 \uacb0\uacfc \uc9c1\ub82c\ud654 \uc2dc\uac04
+agentModule.resultSerializationTime.desc=\uc5d0\uc774\uc804\ud2b8\uc758 \uacb0\uacfc\ub97c \uc9c1\ub82c\ud654\ud558\ub294 \ub370 \uc18c\uc694\ub418\ub294 \uc2dc\uac04
+
+

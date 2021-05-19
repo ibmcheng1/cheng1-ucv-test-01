@@ -1,0 +1,156 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrids
+mapModule=ObjectGrid-Maps
+mapModule.desc=ObjectGrid-Map-Statistiken
+objectGridModule.desc=ObjectGrid-Statistiken
+queryModule=ObjectGrid-Abfragen
+queryModule.desc=ObjectGrid-Abfragestatistiken
+hashIndexModule=HashIndex-Plug-in
+hashIndexModule.desc=HashIndex-Statistiken
+agentModule=Agentenmanager
+agentModule.desc=Agentenmanagerstatistiken
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=Map-Trefferrate
+mapModule.hitRate.desc=Die Trefferrate f\u00fcr diese Map.
+
+mapModule.hitCount.name=Anzahl der Map-Treffer
+mapModule.hitCount.desc=Die Gesamtanzahl der Get-Operationen f\u00fcr diese Map, die zu einem Cachetreffer gef\u00fchrt haben.
+
+mapModule.getCount.name=Anzahl der Get-Operationen f\u00fcr die Map
+mapModule.getCount.desc=Die Gesamtanzahl der Get-Operationen f\u00fcr diese Map.
+
+mapModule.numEntries.name=Anzahl der Map-Eintr\u00e4ge
+mapModule.numEntries.desc=Die Anzahl der Eintr\u00e4ge in dieser Map.
+
+mapModule.loaderBatchUpdateTime.name=Dauer der Aktualisierung im Stapelbetrieb f\u00fcr das Ladeprogramm.
+mapModule.loaderBatchUpdateTime.desc=Die Antwortzeit der Aktualisierungsoperation im Stapelbetrieb des Ladeprogramms.
+
+mapModule.usedBytes.name=Anzahl der von dieser Map belegten Bytes
+mapModule.usedBytes.desc=Die Anzahl der Bytes im Heapspeicher, die durch die in dieser Map gespeicherten Schl\u00fcssel und Werte belegt werden. Die Statistik \u00fcber die belegten Bytes ist nur genau, wenn Sie einfache Objekte oder den Kopiermodus COPY_TO_BYTES verwenden.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=Antwortzeit f\u00fcr Transaktion
+objectGridModule.transactionResponseTime.desc=Die Antwortzeitstatistik f\u00fcr Transaktionen
+
+unit.none=Ohne
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=Ausf\u00fchrungszeit f\u00fcr Abfrage
+queryModule.queryExecutionTime.desc=Die Zeit f\u00fcr die Ausf\u00fchrung der Abfrage.
+
+queryModule.planCreationTime.name=Erstellungszeit f\u00fcr Abfrageplan
+queryModule.planCreationTime.desc=Die Zeit f\u00fcr die Erstellung des Abfrageplans.
+
+queryModule.queryExecutionCount.name=Ausf\u00fchrungsz\u00e4hler f\u00fcr Abfrage
+queryModule.queryExecutionCount.desc=Gibt an, wie oft die Abfrage ausgef\u00fchrt wird.
+
+queryModule.queryResultCount.name=Abfrageergebnisz\u00e4hler
+queryModule.queryResultCount.desc=Die Anzahl der Abfrageergebnisse f\u00fcr jede Abfrageausf\u00fchrung.
+
+queryModule.queryFailureCount.name=Z\u00e4hler f\u00fcr fehlgeschlagene Abfragen
+queryModule.queryFailureCount.desc=Gibt an, wie ft die Abfrage fehlgeschlagen ist.
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=Z\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.findCount.desc=Aufrufz\u00e4hler f\u00fcr Indexsuche
+
+hashIndexModule.findDurationTime.name=Dauer der Indexsuche
+hashIndexModule.findDurationTime.desc=Gibt an, wie lange die Ausf\u00fchrung der Suchoperation gedauert hat.
+
+hashIndexModule.findResultCount.name=Ergebnisz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.findResultCount.desc=Die Anzahl der von der Suchoperation zur\u00fcckgegebenen Schl\u00fcssel.
+
+hashIndexModule.findFailureCount.name=Fehlerz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.findFailureCount.desc=Die Anzahl der Fehler f\u00fcr die Suchoperation.
+
+hashIndexModule.findCollisionCount.name=Kollisionsz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.findCollisionCount.desc=Die Anzahl der Kollisionen f\u00fcr die Suchoperation.
+
+hashIndexModule.batchUpdateCount.name=BatchUpdate-Z\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.batchUpdateCount.desc=Die Anzahl der Aktualisierungen im Stapelbetrieb f\u00fcr diesen Index.
+
+hashIndexModule.updateCount.name=Aktualisierungsz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.updateCount.desc=Die Anzahl der Aktualisierungsoperationen f\u00fcr diesen Index.
+
+hashIndexModule.insertCount.name=Einf\u00fcgez\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.insertCount.desc=Die Anzahl der Einf\u00fcgeoperationen f\u00fcr diesen Index.
+
+hashIndexModule.deleteCount.name=L\u00f6schz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.deleteCount.desc=Die Anzahl der L\u00f6schoperationen f\u00fcr diesen Index.
+
+hashIndexModule.evictionCount.name=Bereinigungsz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.evictionCount.desc=Die Anzahl der Bereinigungsoperationen f\u00fcr diesen Index.
+
+hashIndexModule.clearCount.name=Aufl\u00f6sungsz\u00e4hler f\u00fcr Indexsuche
+hashIndexModule.clearCount.desc=Die Anzahl der Aufl\u00f6sungsoperationen f\u00fcr diesen Index.
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=Dauer der Verkleinerung durch Agenten
+agentModule.reduceTime.desc=Gibt an, wie viel Zeit der Agent insgesamt f\u00fcr die Ausf\u00fchrung der Verkleinerungsoperation ben\u00f6tigt hat.
+
+agentModule.totalDurationTime.name=Gesamt Ausf\u00fchrungsdauer des Agenten
+agentModule.totalDurationTime.desc=Die Gesamtausf\u00fchrungsdauer des Agenten.
+
+agentModule.partitionCount.name=Partitionsz\u00e4hler f\u00fcr Agenten
+agentModule.partitionCount.desc=Die Anzahl der Partition, f\u00fcr die der Agent t\u00e4tig wird.
+
+agentModule.agentSerializationTime.name=Serialisierungszeit des Agenten
+agentModule.agentSerializationTime.desc=Gibt an, wie lange die Serialisierung des Agenten in gedauert hat.
+
+agentModule.resultInflationTime.name=Dauer der Dekomprimierung der Agentenergebnisse
+agentModule.resultInflationTime.desc=Gibt an, wie lange die Dekomprimierung der Agentenergebnisse gedauert hat.
+
+agentModule.invocationCount.name=Aufrufz\u00e4hler f\u00fcr Agentenmanager
+agentModule.invocationCount.desc=Gibt an, wie oft der Agentenmanager gestartet wurde.
+
+agentModule.failureCount.name=Fehlerz\u00e4hler f\u00fcr Agenten
+agentModule.failureCount.desc=Gibt an, wie oft der Agent gescheitert ist.
+
+agentModule.agentInflationTime.name=Dauer der Dekomprimierung des Agenten
+agentModule.agentInflationTime.desc=Gibt an, wie lange die Dekomprimierung des Agenten auf dem Server gedauert hat.
+
+agentModule.resultSerializationTime.name=Dauer der Serialisierung der Agentenergebnisse
+agentModule.resultSerializationTime.desc=Gibt an, wie lange die Serialisierung der Agentenergebnisse gedauert hat.
+
+

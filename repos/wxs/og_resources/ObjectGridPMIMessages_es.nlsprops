@@ -1,0 +1,155 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrids
+mapModule=Correlaciones de ObjectGrid
+mapModule.desc=Estad\u00edsticas de correlaci\u00f3n de ObjectGrid
+objectGridModule.desc=Estad\u00edsticas de ObjectGrid
+queryModule=Consultas de ObjectGrid
+queryModule.desc=Estad\u00edsticas de consulta de ObjectGrid
+hashIndexModule=Plug-in de \u00edndice de hash
+hashIndexModule.desc=Estad\u00edsticas de \u00edndice de hash
+agentModule=Gestor de agentes
+agentModule.desc=Estad\u00edsticas de gestor de agentes
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=\u00cdndice de coincidencias de la correlaci\u00f3n.
+mapModule.hitRate.desc=El \u00edndice de coincidencias para esta correlaci\u00f3n.
+
+mapModule.hitCount.name=N\u00famero de coincidencias de correlaci\u00f3n
+mapModule.hitCount.desc=El n\u00famero total de operaciones get para esta correlaci\u00f3n que ha resultado en una coincidencia de memoria cach\u00e9.
+
+mapModule.getCount.name=N\u00famero de operaciones get de correlaci\u00f3n
+mapModule.getCount.desc=El n\u00famero total de operaciones get para esta correlaci\u00f3n. 
+
+mapModule.numEntries.name=N\u00famero de entradas de la correlaci\u00f3n
+mapModule.numEntries.desc=El n\u00famero de entradas en esta correlaci\u00f3n.
+
+mapModule.loaderBatchUpdateTime.name=Tiempo de actualizaci\u00f3n por lotes del cargador
+mapModule.loaderBatchUpdateTime.desc=Tiempo de respuesta de la operaci\u00f3n de actualizaci\u00f3n por lotes del cargador.
+
+mapModule.usedBytes.name=N\u00famero de bytes utilizados en esta correlaci\u00f3n
+mapModule.usedBytes.desc=El n\u00famero de bytes de memoria de almacenamiento din\u00e1mico consumido y valores almacenados en esta correlaci\u00f3n. Los bytes utilizados s\u00f3lo son precisos cuando se utilizan objetos simples o la modalidad de copia COPY_TO_BYTES.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=Tiempo de respuesta de transacci\u00f3n
+objectGridModule.transactionResponseTime.desc=Estad\u00edstica de tiempo de respuesta para las transacciones.
+
+unit.none=Ninguna
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=Tiempo de ejecuci\u00f3n de consulta
+queryModule.queryExecutionTime.desc=El tiempo que tarda en ejecutarse la consulta
+
+queryModule.planCreationTime.name=Tiempo de creaci\u00f3n del plan de consulta
+queryModule.planCreationTime.desc=Tiempo que se tarda en crear el plan de consulta
+
+queryModule.queryExecutionCount.name=Recuento de ejecuciones de consulta
+queryModule.queryExecutionCount.desc=El n\u00famero de veces que se ejecuta la consulta
+
+queryModule.queryResultCount.name=Recuento de resultados de consulta
+queryModule.queryResultCount.desc=La cantidad total de veces que se ejecuta la consulta y que produce resultados
+
+queryModule.queryFailureCount.name=Recuento de fallos de consulta
+queryModule.queryFailureCount.desc=El n\u00famero de veces que se falla la consulta
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=Recuento de b\u00fasquedas de \u00edndice
+hashIndexModule.findCount.desc=Recuento de las invocaciones de b\u00fasqueda de \u00edndice
+
+hashIndexModule.findDurationTime.name=Tiempo de duraci\u00f3n de b\u00fasqueda de \u00edndice
+hashIndexModule.findDurationTime.desc=El n\u00famero de veces que toma en completarse la operaci\u00f3n de b\u00fasqueda
+
+hashIndexModule.findResultCount.name=Recuento de resultados de b\u00fasqueda de \u00edndice
+hashIndexModule.findResultCount.desc=N\u00famero de claves devueltas en la operaci\u00f3n de b\u00fasqueda
+
+hashIndexModule.findFailureCount.name=Recuento de fallos de b\u00fasqueda de \u00edndice
+hashIndexModule.findFailureCount.desc=N\u00famero de fallos de la operaci\u00f3n de b\u00fasqueda
+
+hashIndexModule.findCollisionCount.name=Recuento de colisiones de b\u00fasqueda de \u00edndice
+hashIndexModule.findCollisionCount.desc=N\u00famero de colisiones de la operaci\u00f3n de b\u00fasqueda
+
+hashIndexModule.batchUpdateCount.name=Recuento de actualizaciones de proceso de b\u00fasqueda de \u00edndice
+hashIndexModule.batchUpdateCount.desc=N\u00famero de actualizaciones de proceso de este \u00edndice
+
+hashIndexModule.updateCount.name=Recuento de actualizaciones de b\u00fasqueda de \u00edndice
+hashIndexModule.updateCount.desc=Cantidad de operaciones de actualizaci\u00f3n en este \u00edndice
+
+hashIndexModule.insertCount.name=Recuento de inserciones de b\u00fasqueda de \u00edndice
+hashIndexModule.insertCount.desc=Cantidad de operaciones de inserci\u00f3n en este \u00edndice
+
+hashIndexModule.deleteCount.name=Recuento de supresiones de b\u00fasqueda de \u00edndice
+hashIndexModule.deleteCount.desc=Cantidad de operaciones de supresi\u00f3n en este \u00edndice
+
+hashIndexModule.evictionCount.name=Recuento de desalojos de b\u00fasqueda de \u00edndice
+hashIndexModule.evictionCount.desc=Cantidad de operaciones de desalojo en este \u00edndice
+
+hashIndexModule.clearCount.name=Recuento de eliminaciones de b\u00fasqueda de \u00edndice
+hashIndexModule.clearCount.desc=Cantidad de operaciones de eliminaci\u00f3n en este \u00edndice
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=Tiempo de reducci\u00f3n del agente
+agentModule.reduceTime.desc=Tiempo total que tarda el agente en terminar la operaci\u00f3n de reducci\u00f3n
+
+agentModule.totalDurationTime.name=Tiempo de duraci\u00f3n total del agente
+agentModule.totalDurationTime.desc=Tiempo total que tarda el agente en completarse
+
+agentModule.partitionCount.name=Recuento de particiones del agente
+agentModule.partitionCount.desc=Cantidad de particiones que se env\u00edan al agente
+agentModule.agentSerializationTime.name=Tiempo de serializaci\u00f3n del agente
+agentModule.agentSerializationTime.desc=Cantidad de tiempo que se tarda en serializar el agente
+
+agentModule.resultInflationTime.name=Tiempo de inflado de resultados del agente
+agentModule.resultInflationTime.desc=Cantidad de tiempo que se tarda en inflar los resultados del agente
+
+agentModule.invocationCount.name=Recuento de invocaciones del gestor de agentes
+agentModule.invocationCount.desc=N\u00famero de veces que se ha iniciado el agente
+
+agentModule.failureCount.name=Recuento de fallos de agente
+agentModule.failureCount.desc=N\u00famero de veces que ha fallado el agente
+
+agentModule.agentInflationTime.name=Tiempo de inflado de agente
+agentModule.agentInflationTime.desc=Cantidad de tiempo que se tarda en inflar el agente en el servidor
+
+agentModule.resultSerializationTime.name=Tiempo de serializaci\u00f3n de resultados del agente
+agentModule.resultSerializationTime.desc=Cantidad de tiempo que se tarda en serializar los resultados del agente
+
+

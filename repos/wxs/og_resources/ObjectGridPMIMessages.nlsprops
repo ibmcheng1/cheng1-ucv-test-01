@@ -1,0 +1,156 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrids
+mapModule=ObjectGrid Maps
+mapModule.desc=ObjectGrid Map Statistics
+objectGridModule.desc=ObjectGrid statistics
+queryModule=ObjectGrid Queries
+queryModule.desc=ObjectGrid Query Statistics
+hashIndexModule=HashIndex Plug-in
+hashIndexModule.desc=HashIndex Statistics
+agentModule=Agent Manager
+agentModule.desc=Agent Manager Statistics
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=Map hit rate
+mapModule.hitRate.desc=The hit rate for this map.
+
+mapModule.hitCount.name=Number of map hits
+mapModule.hitCount.desc=The total number of get operations for this map that resulted in a cache hit. 
+
+mapModule.getCount.name=Number of map gets
+mapModule.getCount.desc=The total number of get operations for this map. 
+
+mapModule.numEntries.name=Number of map entries
+mapModule.numEntries.desc=The number of entries in this map.
+
+mapModule.loaderBatchUpdateTime.name=Batch update time for the loader.
+mapModule.loaderBatchUpdateTime.desc=The response time of the batch update operation of the loader.
+
+mapModule.usedBytes.name=Number of bytes in use by this map
+mapModule.usedBytes.desc=The number of bytes of heap memory that is consumed by the keys and values stored in this map. The used bytes statistics are accurate only when you are using simple objects or the COPY_TO_BYTES copy mode.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=Transaction response time
+objectGridModule.transactionResponseTime.desc=The response time statistic for transactions.
+
+unit.none=None
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=Query Execution Time
+queryModule.queryExecutionTime.desc=The time it takes to run the query
+
+queryModule.planCreationTime.name=Query Plan Creation Time
+queryModule.planCreationTime.desc=The time it takes to create the query plan
+
+queryModule.queryExecutionCount.name=Query Execution Count
+queryModule.queryExecutionCount.desc=The number of times that the query is run
+
+queryModule.queryResultCount.name=Query Result Count
+queryModule.queryResultCount.desc=The count for each time that the query is run and produces results
+
+queryModule.queryFailureCount.name=Query Failure Count
+queryModule.queryFailureCount.desc=The number of times that the query fails
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=Index Find Count
+hashIndexModule.findCount.desc=Index find invocation count
+
+hashIndexModule.findDurationTime.name=Index Find Duration Time
+hashIndexModule.findDurationTime.desc=The number of times that the find operation takes to complete
+
+hashIndexModule.findResultCount.name=Index Find Result Count
+hashIndexModule.findResultCount.desc=The number of keys returned from the find operation
+
+hashIndexModule.findFailureCount.name=Index Find Failure Count
+hashIndexModule.findFailureCount.desc=The number of failures for the find operation
+
+hashIndexModule.findCollisionCount.name=Index Find Collision Count
+hashIndexModule.findCollisionCount.desc=The number of collisions for the find operation
+
+hashIndexModule.batchUpdateCount.name=Index Find BatchUpdate Count
+hashIndexModule.batchUpdateCount.desc=The number of batch updates against this index
+
+hashIndexModule.updateCount.name=Index Find Update Count
+hashIndexModule.updateCount.desc=The number of update operations to this index
+
+hashIndexModule.insertCount.name=Index Find Insert Count
+hashIndexModule.insertCount.desc=The amount of insert operations to this index
+
+hashIndexModule.deleteCount.name=Index Find Delete Count
+hashIndexModule.deleteCount.desc=The amount of delete operations to this index
+
+hashIndexModule.evictionCount.name=Index Find Eviction Count
+hashIndexModule.evictionCount.desc=The amount of eviction operations to this index
+
+hashIndexModule.clearCount.name=Index Find Clear Count
+hashIndexModule.clearCount.desc=The amount of clear operations to this index
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=Agent Reduce Time
+agentModule.reduceTime.desc=The total time it takes the Agent to finish the reduce operation
+
+agentModule.totalDurationTime.name=Agent Total Duration Time
+agentModule.totalDurationTime.desc=The total time it takes for the Agent to complete
+
+agentModule.partitionCount.name=Agent Partition Count
+agentModule.partitionCount.desc=The amount of partitions the Agent is sent to
+
+agentModule.agentSerializationTime.name=Agent Serialization Time
+agentModule.agentSerializationTime.desc=The amount of time it takes to serialize the Agent
+
+agentModule.resultInflationTime.name=Agent Result Inflation Time
+agentModule.resultInflationTime.desc=The amount of time it takes to inflate the Agent's results
+
+agentModule.invocationCount.name=Agent Manager Invocation Count
+agentModule.invocationCount.desc=The number of times the AgentManager has been started
+
+agentModule.failureCount.name=Agent Failure Count
+agentModule.failureCount.desc=The number of times the agent failed
+
+agentModule.agentInflationTime.name=Agent Inflation Time
+agentModule.agentInflationTime.desc=The amount of time it takes to inflate the Agent on the server
+
+agentModule.resultSerializationTime.name=Agent Result Serialization Time
+agentModule.resultSerializationTime.desc=The amount of time it takes to serialize the Agent's results
+
+

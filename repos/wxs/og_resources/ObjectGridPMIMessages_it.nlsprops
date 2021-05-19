@@ -1,0 +1,155 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrids
+mapModule=Mappe ObjectGrid
+mapModule.desc=Statistiche mappa ObjectGrid
+objectGridModule.desc=Statistiche ObjectGrid
+queryModule=Query ObjectGrid
+queryModule.desc=Statistiche query ObjectGrid
+hashIndexModule=Plug-in HashIndex
+hashIndexModule.desc=Statistiche HashIndex
+agentModule=Gestore Agent
+agentModule.desc=Statistiche gestore agent
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=Velocit\u00e0 di immissione mappa
+mapModule.hitRate.desc=La velocit\u00e0 di immissione per questa mappa.
+
+mapModule.hitCount.name=Numero di immissione della mappa
+mapModule.hitCount.desc=Il numero totale di operazioni get per questa mappa risultate in una immissione della cache. 
+
+mapModule.getCount.name=Numero di get della mappa
+mapModule.getCount.desc=Il numero totale di operazioni get per questa mappa. 
+
+mapModule.numEntries.name=Numero di voci della mappa
+mapModule.numEntries.desc=Il numero di voci in questa mappa.
+
+mapModule.loaderBatchUpdateTime.name=Tempo di aggiornamento batch per il programma di caricamento.
+mapModule.loaderBatchUpdateTime.desc=Il tempo di risposta dell'operazione di aggiornamento batch del programma di caricamento.
+
+mapModule.usedBytes.name=Numero di byte utilizzati da questa mappa
+mapModule.usedBytes.desc=Il numero di byte della memoria heap utilizzati da chiavi e valori memorizzati in questa mappa. Le statistiche di byte utilizzate sono corrette solo quando si utilizzano oggetti semplici o la modalit\u00e0 di copia  COPY_TO_BYTES.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=Tempo di risposta delle transazioni
+objectGridModule.transactionResponseTime.desc=La statistica relativa al tempo di risposta per le transazioni.
+
+unit.none=Nessuno
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=Tempo di esecuzione della query
+queryModule.queryExecutionTime.desc=Il tempo impiegato per eseguire la query
+
+queryModule.planCreationTime.name=Tempo di creazione piano di query
+queryModule.planCreationTime.desc=Il tempo impiegato per creare il piano di query
+
+queryModule.queryExecutionCount.name=Conteggio esecuzioni della query
+queryModule.queryExecutionCount.desc=Il numero di volte in cui viene eseguita la query
+
+queryModule.queryResultCount.name=Conteggio risultati della query
+queryModule.queryResultCount.desc=Il conteggio per ogni volta in cui la query viene eseguita e produce risultati 
+queryModule.queryFailureCount.name=Conteggio errori della query
+queryModule.queryFailureCount.desc=Il numero di volte in cui la query non riesce
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=Conteggio rilevamento indice
+hashIndexModule.findCount.desc=Conteggio richiamo rilevamento indice
+
+hashIndexModule.findDurationTime.name=Tempo di durata rilevamento indice
+hashIndexModule.findDurationTime.desc=La quantit\u00e0 di tempo in cui l'operazione di rilevamento impiega per completare
+
+hashIndexModule.findResultCount.name=Conteggio risultati rilevamento indice
+hashIndexModule.findResultCount.desc=Il numero di chiavi restituite dall'operazione di rilevamento
+
+hashIndexModule.findFailureCount.name=Conteggio errori rilevamento indice
+hashIndexModule.findFailureCount.desc=Il numero di errori per l'operazione di rilevamento
+
+hashIndexModule.findCollisionCount.name=Conteggio collisioni rilevamento indice
+hashIndexModule.findCollisionCount.desc=Il numero di collisioni per l'operazione di rilevamento
+
+hashIndexModule.batchUpdateCount.name=Conteggio BatchUpdate rilevamento indice
+hashIndexModule.batchUpdateCount.desc=Il numero di aggiornamenti batch su questo indice
+
+hashIndexModule.updateCount.name=Conteggio aggiornamenti rilevamento indice
+hashIndexModule.updateCount.desc=Il numero operazioni di aggiornamento per questo indice
+
+hashIndexModule.insertCount.name=Conteggio inserimenti rilevamento indice
+hashIndexModule.insertCount.desc=La quantit\u00e0 di operazioni di inserimento in questo indice
+
+hashIndexModule.deleteCount.name=Conteggio eliminazioni rilevamento indice
+hashIndexModule.deleteCount.desc=La quantit\u00e0 di operazioni di eliminazione in questo indice
+
+hashIndexModule.evictionCount.name=Conteggio ripulitura rilevamento indice
+hashIndexModule.evictionCount.desc=La quantit\u00e0 di operazioni di ripulitura in questo indice
+
+hashIndexModule.clearCount.name=Conteggio azzeramento rilevamento indice
+hashIndexModule.clearCount.desc=La quantit\u00e0 di operazioni di azzeramento in questo indice
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=Tempo riduzione agent
+agentModule.reduceTime.desc=Il tempo totale impiegato dall'agent per finire l'operazione di riduzione
+
+agentModule.totalDurationTime.name=Tempo di durata totale agent
+agentModule.totalDurationTime.desc=Il tempo totale impiegato per il completamento dell'agent
+
+agentModule.partitionCount.name=Conteggio partizioni agent
+agentModule.partitionCount.desc=La quantit\u00e0 di partizioni a cui \u00e8 inviato l'agent
+
+agentModule.agentSerializationTime.name=Tempo di serializzazione agent
+agentModule.agentSerializationTime.desc=La quantit\u00e0 di tempo impiegata per serializzare l'agent
+
+agentModule.resultInflationTime.name=Tempo di deserializzazione dei risultati agent
+agentModule.resultInflationTime.desc=La quantit\u00e0 di tempo impiegata per deserializzare i risultati dell'agent
+
+agentModule.invocationCount.name=Conteggio richiami gestore agent
+agentModule.invocationCount.desc=Il numero di volte in cui AgentManager \u00e8 stato avviato
+
+agentModule.failureCount.name=Conteggio errori agent
+agentModule.failureCount.desc=Il numero di volte in cui l'agent non \u00e8 riuscito
+
+agentModule.agentInflationTime.name=Tempo deserializzazione agent
+agentModule.agentInflationTime.desc=La quantit\u00e0 di tempo impiegata per deserializzare l'agent sul server
+
+agentModule.resultSerializationTime.name=Tempo di serializzazione risultati agent
+agentModule.resultSerializationTime.desc=La quantit\u00e0 di tempo impiegato per serializzare i risultati dell'agent
+
+

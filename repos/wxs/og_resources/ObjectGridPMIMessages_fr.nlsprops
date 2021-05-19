@@ -1,0 +1,156 @@
+# IBM Confidential OCO Source Material
+
+# 5630-A37 (C) COPYRIGHT International Business Machines Corp. 2003
+# The source code for this program is not published or otherwise divested
+# of its trade secrets, irrespective of what has been deposited with the
+# U.S. Copyright Office.
+#
+# This file has been modified to follow the WebSphere Message Guidelines.
+# For more information, visit:
+#   http://seaux.raleigh.ibm.com/g11n/was/seae/45/messages/index.html
+# or contact Dennis Hebert/Raleigh/IBM (hebert@us.ibm.com)
+#
+# cmvc_en_version_level=1.3,0,05/06/09,08:49:19
+#
+#
+#CMVCPATHNAME XD/ws/code/objectgrid/src/com/ibm/ws/objectgrid/resources/ObjectGridPMIMessages.nlsprops
+#ISMESSAGEFILE FALSE
+#NLS_MESSAGEFORMAT_NONE
+#NLS_ENCODING=UNICODE
+
+# -------------------------------------------------------------------------------------------------
+# Module Name
+# -------------------------------------------------------------------------------------------------
+objectGridModule=ObjectGrids
+mapModule=Mappes ObjectGrid
+mapModule.desc=Statistiques de mappes ObjectGrid
+objectGridModule.desc=Statistiques ObjectGrid
+queryModule=Requ\u00eates ObjectGrid
+queryModule.desc=Statistiques de requ\u00eates ObjectGrid
+hashIndexModule=Plug-in HashIndex
+hashIndexModule.desc=Statistiques HashIndex
+agentModule=Gestionnaire d'agents
+agentModule.desc=Statistiques du gestionnaire d'agents
+
+
+
+
+# -------------------------------------------------------------------------------------------------
+# Map statistics
+# -------------------------------------------------------------------------------------------------
+mapModule.hitRate.name=Nombre d'occurrences de mappe
+mapModule.hitRate.desc=Nombre d'occurrences pour cette mappe.
+
+mapModule.hitCount.name=Nombre d'acc\u00e8s de mappe
+mapModule.hitCount.desc=Nombre total d'op\u00e9rations d'extraction qui ont abouti \u00e0 un acc\u00e8s \u00e0 la m\u00e9moire cache pour cette mappe. 
+
+mapModule.getCount.name=Nombre d'extractions de mappe
+mapModule.getCount.desc=Nombre total d'op\u00e9rations d'extraction pour cette mappe. 
+
+mapModule.numEntries.name=Nombre d'entr\u00e9es de mappe
+mapModule.numEntries.desc=Nombre d'entr\u00e9es dans cette mappe
+
+mapModule.loaderBatchUpdateTime.name=Temps de mise \u00e0 jour par lots du chargeur.
+mapModule.loaderBatchUpdateTime.desc=Temps de r\u00e9ponse de la mise \u00e0 jour par lots du chargeur.
+
+mapModule.usedBytes.name=Nombre d'octets utilis\u00e9s par cette mappe
+mapModule.usedBytes.desc=Nombre d'octets de segment de m\u00e9moire consomm\u00e9s par les cl\u00e9s et les valeurs stock\u00e9es dans cette mappe. Les statistiques d'octets utilis\u00e9es sont exactes uniquement lorsque vous utilisez des objets simples ou le mode de copie COPY_TO_BYTES.
+
+# -------------------------------------------------------------------------------------------------
+# ObjectGrid statistics
+# -------------------------------------------------------------------------------------------------
+objectGridModule.transactionResponseTime.name=Temps de r\u00e9ponse des transactions
+objectGridModule.transactionResponseTime.desc=Statistique de temps de r\u00e9ponse des transactions.
+
+unit.none=Aucun
+unit.millisec=ms
+
+
+# -------------------------------------------------------------------------------------------------
+# Query statistics
+# -------------------------------------------------------------------------------------------------
+
+queryModule.queryExecutionTime.name=Temps d'ex\u00e9cution de la requ\u00eate
+queryModule.queryExecutionTime.desc=Temps n\u00e9cessaire \u00e0 l'ex\u00e9cution de  la requ\u00eate
+
+queryModule.planCreationTime.name=Temps de cr\u00e9ation du plan de requ\u00eate
+queryModule.planCreationTime.desc=Temps n\u00e9cessaire pour cr\u00e9er le plan de requ\u00eate
+
+queryModule.queryExecutionCount.name=Nombre d'ex\u00e9cutions de la requ\u00eate
+queryModule.queryExecutionCount.desc=Nombre d'ex\u00e9cutions de la requ\u00eate.
+
+queryModule.queryResultCount.name=Nombre de r\u00e9sultats de la requ\u00eate
+queryModule.queryResultCount.desc=Nombre de d'ex\u00e9cutions de la requ\u00eate g\u00e9n\u00e9rant des r\u00e9sultats.
+
+queryModule.queryFailureCount.name=Nombre d'\u00e9checs de la requ\u00eate
+queryModule.queryFailureCount.desc=Nombre d'\u00e9checs d'ex\u00e9cution de la requ\u00eate
+
+# -------------------------------------------------------------------------------------------------
+# HashIndex statistics
+# -------------------------------------------------------------------------------------------------
+
+hashIndexModule.findCount.name=Nombre de recherches dans l'index
+hashIndexModule.findCount.desc=Nombre d'ex\u00e9cutions de recherches dans l'index
+
+hashIndexModule.findDurationTime.name=Dur\u00e9e de recherche dans l'index
+hashIndexModule.findDurationTime.desc=Dur\u00e9e de la recherche
+
+hashIndexModule.findResultCount.name=Nombre de r\u00e9sultats de la recherche dans l'index
+hashIndexModule.findResultCount.desc=Nombre de cl\u00e9s renvoy\u00e9es par l'op\u00e9ration de recherche
+
+hashIndexModule.findFailureCount.name=Nombre d'\u00e9chec de le recherche dans l'index
+hashIndexModule.findFailureCount.desc=Nombre d'\u00e9checs pour l'op\u00e9ration de recherche
+
+hashIndexModule.findCollisionCount.name=Nombre de collisions de recherche dans l'index
+hashIndexModule.findCollisionCount.desc=Nombre de collisions pour la recherche
+
+hashIndexModule.batchUpdateCount.name=Nombre de mises \u00e0 jour par lots de la recherche dans l'index
+hashIndexModule.batchUpdateCount.desc=Nombre de mises \u00e0 jour par lots par rapport \u00e0 cet index
+
+hashIndexModule.updateCount.name=Nombre de mises \u00e0 jour de recherche dans l'index
+hashIndexModule.updateCount.desc=Nombre de mises \u00e0 jour de l'index
+
+hashIndexModule.insertCount.name=Nombre d'insertions de recherche dans l'index
+hashIndexModule.insertCount.desc=Nombre d'op\u00e9rations d'insertion pour cet index
+
+hashIndexModule.deleteCount.name=Nombre de suppressions de recherche dans l'index
+hashIndexModule.deleteCount.desc=Nombre d'op\u00e9rations de suppression pour cet index
+
+hashIndexModule.evictionCount.name=Nombre d'expulsions de recherche dans l'index
+hashIndexModule.evictionCount.desc=Nombre d'op\u00e9rations d'expulsion pour cet index
+
+hashIndexModule.clearCount.name=Nombre d'effacements de recherche dans l'index
+hashIndexModule.clearCount.desc=Nombre d'op\u00e9rations d'effacement pour cet index
+
+# -------------------------------------------------------------------------------------------------
+# Agent Manager statistics
+# -------------------------------------------------------------------------------------------------
+
+agentModule.reduceTime.name=Temps de r\u00e9duction de l'agent
+agentModule.reduceTime.desc=Temps total que prend l'agent pour finir l'op\u00e9ration de r\u00e9duction
+
+agentModule.totalDurationTime.name=Dur\u00e9e totale de l'agent
+agentModule.totalDurationTime.desc=Temps total que prend l'agent pour s'achever
+
+agentModule.partitionCount.name=Nombre de partitions de l'agent
+agentModule.partitionCount.desc=Nombre de partitions auxquelles l'agent est envoy\u00e9
+
+agentModule.agentSerializationTime.name=Temps de s\u00e9rialisation de l'agent
+agentModule.agentSerializationTime.desc=Temps n\u00e9cessaire pour s\u00e9rialiser l'agent
+
+agentModule.resultInflationTime.name=Temps d'inflation des r\u00e9sultats de l'agent
+agentModule.resultInflationTime.desc=Temps n\u00e9cessaire pour l'inflation des r\u00e9sultats de l'agent
+
+agentModule.invocationCount.name=Nombre d'appels du gestionnaire d'agents
+agentModule.invocationCount.desc=Nombre de d\u00e9marrages d'AgentManager
+
+agentModule.failureCount.name=Nombre d'\u00e9checs de l'agent
+agentModule.failureCount.desc=Nombre de fois que l'agent a \u00e9chou\u00e9
+
+agentModule.agentInflationTime.name=Temps d'inflation de l'agent
+agentModule.agentInflationTime.desc=Temps n\u00e9cessaire pour l'inflation de l'agent sur le serveur
+
+agentModule.resultSerializationTime.name=Temps de s\u00e9rialisation des r\u00e9sultats de l'agent
+agentModule.resultSerializationTime.desc=Temps n\u00e9cessaire pour s\u00e9rialiser les r\u00e9sultats de l'agent
+
+
