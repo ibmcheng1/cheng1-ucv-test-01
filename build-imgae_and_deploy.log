@@ -1,0 +1,122 @@
+#############################
+cheng1-incident: build-image
+#############################
+
+STEP-BUILD-IMAGE
+
++ buildah --version
+buildah version 1.18.0 (image-spec 1.0.1-dev, runtime-spec 1.0.2-dev)
+++ id -u
++ echo 'tekton:x:0:0:tekton user:/tekton/home:/sbin/nologin'
+++ id -u
++ echo 0:1100000000:65536
+++ id -u
++ echo 0:1100000000:65536
+++ basename https://git.delta.com/x11726/quarkus-api-with-persistence-kafka-eventing-on-openshift.git
+++ cut -d. -f1
++ APP_NAME=quarkus-api-with-persistence-kafka-eventing-on-openshift
++ DESTINATION_IMAGE=image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus:SNAPSHOT
++ [[ quarkus-fast-jar == \q\u\a\r\k\u\s\-\n\a\t\i\v\e ]]
+++ buildah --storage-driver=vfs --tls-verify=false from image-registry.openshift-image-registry.svc:5000/openshift/ubi8-openjdk-11:1.3
+Getting image source signatures
+Copying blob sha256:0915c58a62c7ecca6a349f307742e19d23118e1af25241383f841e0dd4a79aef
+Copying blob sha256:13948a011eecd34fe31551e2e072246169350e27314e5f84b94508c0f848ae7e
+Copying blob sha256:a6b97b4963f5ace479dbf5bdc821bdb757de2aef502a39a19b236856827250d0
+Copying config sha256:ac45a78b48378f0c49a0c2e95fb5c20c35859c11a3071ad087aa7b9ab715a3d8
+Writing manifest to image destination
+Storing signatures
++ CONTAINER=image-registry.openshift-image-registry.svc-working-container
++ case quarkus-fast-jar in
++ buildah --storage-driver=vfs copy image-registry.openshift-image-registry.svc-working-container ./target/quarkus-app/lib/ /deployments/lib/
+616f3bf749f67b56990489d6b9e13234ef75f77403de53af2bce2d57a8ab9c22
++ buildah --storage-driver=vfs copy image-registry.openshift-image-registry.svc-working-container ./target/quarkus-app/quarkus-run.jar /deployments/app.jar
+e816ef7f6708a82c82c740a492eff3d6138f73ce6288b01213418072d3e0664c
++ buildah --storage-driver=vfs copy image-registry.openshift-image-registry.svc-working-container ./target/quarkus-app/app/ /deployments/app/
+16fef1f479d1896e1810c8844923b59320b168feea18d39272420ad3fea25aa1
++ buildah --storage-driver=vfs copy image-registry.openshift-image-registry.svc-working-container ./target/quarkus-app/quarkus/ /deployments/quarkus/
+7e21622e692288d04ec39aed2c0618b42ca9cf7de1775762c381aab8e1e5888d
++ buildah --storage-driver=vfs config --label GIT_COMMIT=master --author=Tekton image-registry.openshift-image-registry.svc-working-container
++ buildah --storage-driver=vfs config --label GIT_URL=https://git.delta.com/x11726/quarkus-api-with-persistence-kafka-eventing-on-openshift.git --author=Tekton image-registry.openshift-image-registry.svc-working-container
++ buildah --storage-driver=vfs config --label GIT_BRANCH=SNAPSHOT --author=Tekton image-registry.openshift-image-registry.svc-working-container
++ '[' SNAPSHOT == SNAPSHOT ']'
++ buildah --storage-driver=vfs config --label PIPELINE=SNAPSHOT --author=Tekton image-registry.openshift-image-registry.svc-working-container
++ buildah --storage-driver=vfs commit image-registry.openshift-image-registry.svc-working-container image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus:SNAPSHOT
+Getting image source signatures
+Copying blob sha256:3aa55ff7bca11fe107fcefec151021377ce49f4bacb40262a416b88bc34aeb64
+Copying blob sha256:00af1093768343aa049c23501f506e4a075f2589b8c4b1649218175a65753139
+Copying blob sha256:914a0d0dec95de72272dbc02539dcaee2aca17e185b70c2e3d645b1737c9dc61
+Copying blob sha256:9a3fb46938d891781e95750bace09583ee6c8b030a5dfda0b78c9cf1c7c3a3b9
+Copying config sha256:ef87b8b537aadc01968943f84b3417c5834f29d068f6ddf5da48d3b913af8d8e
+Writing manifest to image destination
+Storing signatures
+ef87b8b537aadc01968943f84b3417c5834f29d068f6ddf5da48d3b913af8d8e
++ buildah --storage-driver=vfs unmount image-registry.openshift-image-registry.svc-working-container
+STEP-PUSH-IMAGE
+
+++ id -u
++ echo 'tekton:x:0:0:tekton user:/tekton/home:/sbin/nologin'
+++ id -u
++ echo 0:1100000000:65536
+++ id -u
++ echo 0:1100000000:65536
++ DESTINATION_IMAGE=image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus:SNAPSHOT
++ buildah --storage-driver=vfs push --tls-verify=false --digestfile image-digest image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus:SNAPSHOT docker://image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus:SNAPSHOT
+Getting image source signatures
+Copying blob sha256:9a3fb46938d891781e95750bace09583ee6c8b030a5dfda0b78c9cf1c7c3a3b9
+Copying blob sha256:00af1093768343aa049c23501f506e4a075f2589b8c4b1649218175a65753139
+Copying blob sha256:914a0d0dec95de72272dbc02539dcaee2aca17e185b70c2e3d645b1737c9dc61
+Copying blob sha256:3aa55ff7bca11fe107fcefec151021377ce49f4bacb40262a416b88bc34aeb64
+Copying config sha256:ef87b8b537aadc01968943f84b3417c5834f29d068f6ddf5da48d3b913af8d8e
+Writing manifest to image destination
+Storing signatures
++ tee /tekton/results/image-digest
+sha256:7d54fbd03e91841c496b453e58fc2b9507dea621fb437b1ea446af0b98a14e0a+ tee /tekton/results/image
+++ cat image-digest
++ echo -n image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus@sha256:7d54fbd03e91841c496b453e58fc2b9507dea621fb437b1ea446af0b98a14e0a
+image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus@sha256:7d54fbd03e91841c496b453e58fc2b9507dea621fb437b1ea446af0b98a14e0a
+
+#############################
+cheng1-incident: deploy
+#############################
+
+STEP-APPLY-IAC
+
++ OC_ARGS=
++ '[' -d iac/openshift ']'
+Applying configuration from iac/openshift
++ OC_ARGS='-f iac/openshift'
++ '[' -d iac/openshift/dev ']'
++ '[' -n '-f iac/openshift' ']'
++ echo Applying configuration from iac/openshift
++ oc apply -f iac/openshift
+W0620 12:56:04.239439      16 shim_kubectl.go:55] Using non-groupfied API resources is deprecated and will be removed in a future release, update apiVersion to "template.openshift.io/v1" for your resource
+task.tekton.dev/qs-deploy configured
+configmap/qs-app-deployment-template unchanged
+deployment.apps/incident-service-quarkus configured
+task.tekton.dev/qs-build-java configured
+pipeline.tekton.dev/qs-build-and-deploy-java configured
+template.template.openshift.io/qs-simple-quarkus-fast-jar-app unchanged
+STEP-ROLLOUT
+
++ echo Rolling out incident-service-quarkus
+Rolling out incident-service-quarkus
++ oc set image deployment/incident-service-quarkus incident-service-quarkus=image-registry.openshift-image-registry.svc:5000/cheng1-incident/incident-service-quarkus@sha256:7d54fbd03e91841c496b453e58fc2b9507dea621fb437b1ea446af0b98a14e0a --source=docker
+deployment.apps/incident-service-quarkus image updated
++ oc rollout restart deployment/incident-service-quarkus
+deployment.apps/incident-service-quarkus restarted
++ oc scale --replicas=1 deployment/incident-service-quarkus
+deployment.apps/incident-service-quarkus scaled
++ echo -----------------------------------
+-----------------------------------
+STEP-ROLLBACK-IF-NEEDED
+
++ echo Waiting for rollout to complete for incident-service-quarkus
++ set +e
+Waiting for rollout to complete for incident-service-quarkus
++ oc rollout status deployment/incident-service-quarkus --timeout=60s
+Waiting for deployment "incident-service-quarkus" rollout to finish: 0 of 1 updated replicas are available...
+deployment "incident-service-quarkus" successfully rolled out
++ echo Rollout succeeded
+Rollout succeeded
+-----------------------------------
++ echo -----------------------------------
